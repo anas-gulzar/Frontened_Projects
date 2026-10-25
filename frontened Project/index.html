@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spider-Man</title>
+   <style>
+    #main{
+  margin-top: 10%;
+}
+#container{
+  height:100px;
+  width:300px;
+  border:2px solid black;
+  display :flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square{
+  border : 2px solid #A100ff;
+  height : 60px;
+  width:60px;
+  background-color: purple;
+  background-color: #A100ff;
+}
+
+button{
+  border : 0px;
+  padding : 3px 5px 3px 5px;
+  background-color: purple;
+  color : white;
+}
+
+.circle{
+  height : 70px;
+  width:70px;
+  border-radius: 50%;
+  border : 2px solid #A100ff; 
+  background-color: #A100ff ;
+}
+
+.triangle{
+  width: 0;
+  height : 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 80px solid #A100ff;
+}
+    </style>
+  </head>
+  <body>
+
+<center>
+  <div id="main">
+<div id="container">
+  <div id="id"></div>
+  <p></p>
+</div>
+<br>
+<button id="triangle" class="button">Triangle</button>
+<button id="circle" class="button">Circle</button>
+<button id="square" class="button">Square</button>
+</div>
+</center>
+
+    <script>
+      let p = document.querySelector('p');
+let btn1 = document.querySelector('#triangle');
+let btn2 = document.querySelector('#circle');
+let btn3 = document.querySelector('#square');
+let shape = document.getElementById('id');
+
+btn1.addEventListener('click', function(){
+    shape.classList.remove();
+    shape.setAttribute('class', 'triangle');
+});
+
+btn2.addEventListener('click', function(){
+    shape.classList.remove();
+    shape.setAttribute('class', 'circle');
+});
+
+btn3.addEventListener('click', function(){
+    shape.classList.remove();
+    shape.setAttribute('class', 'square');
+});
+
+
+
+    </script>
+  </body>
+</html>
