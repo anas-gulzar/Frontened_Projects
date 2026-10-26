@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <style>
+  #container{
+    height : 100px;
+    width : 500px;
+    border : 2px solid black;
+  }
+  </style>
+</head>
+<body>
 
+  <center>
+    
+<h1 id="h1">Background Colour</h1>
+<button id="btn">Change Colour!</button>
+<br>
+<br>
+<div id="container"></div>
+
+  </center>
+
+  <script>
+    let red = Math.floor(Math.random()*255);
+let green = Math.floor(Math.random()*255);
+let blue = Math.floor(Math.random()*255);
+let btn = document.querySelector("button");
+let div = document.querySelector("#container");
+
+btn.addEventListener("click", function(){
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    h1.innerText = `RGB(${red}, ${green}, ${blue})`;
+    div.style.backgroundColor = `rgb(${red} ${green} ${blue})`;
+});
+
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <style>
+  #container{
+    height : 100px;
+    width : 500px;
+    border : 2px solid black;
+  }
+  </style>
+</head>
+<body>
+
+  <center>
+    
+<h1 id="h1">Background Colour</h1>
+<button id="btn">Change Colour!</button>
+<br>
+<br>
+<div id="container"></div>
+
+  </center>
+
+  <script>
+    let red = Math.floor(Math.random()*255);
+let green = Math.floor(Math.random()*255);
+let blue = Math.floor(Math.random()*255);
+let btn = document.querySelector("button");
+let div = document.querySelector("#container");
+
+btn.addEventListener("click", function(){
+    let red = Math.floor(Math.random()*255);
+    let green = Math.floor(Math.random()*255);
+    let blue = Math.floor(Math.random()*255);
+    h1.innerText = `RGB(${red}, ${green}, ${blue})`;
+    div.style.backgroundColor = `rgb(${red} ${green} ${blue})`;
+});
+
+  </script>
+</body>
+</html>
