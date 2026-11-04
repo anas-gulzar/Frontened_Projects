@@ -1,0 +1,153 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f08080;
+}
+
+#box {
+  background-color: white;
+  min-height: 380px;
+  width: 320px;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px;
+  margin-top: 5rem;
+  padding-bottom: 1.5rem;
+  animation: slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+  @keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+#sub-heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  line-height: 4rem;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.choices{
+  display: flex;
+  justify-content: space-around;
+}
+
+.choice > img{
+  height: 60px;
+  width: 60px;
+  background-color: #f08080;
+  border-radius: 50%;
+  border: 1.5px solid red;
+  padding: 3px;
+  object-fit:contain;
+}
+
+.move{
+  height: 90px;
+  width: 90px;
+}
+
+.your-move{
+  margin-right: 20px;
+}
+
+.comp-move{
+  margin-left: 20px;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  33% {transform: rotate(45deg);}
+  66% {transform: rotate(-45deg);}
+  100% {transform: rotate(0deg);}
+}
+
+.shake-rock{
+  animation: rotate 1s ease-in-out forwards;
+}
+
+
+.play-game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.play-again-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+
+.play-again{
+  height: 30px;
+  width: 100px;
+  border: 1px solid black;
+  color: white;
+  background-color: #f08080;
+  border-radius: 15px;
+}
+
+.choice > img:hover{
+  box-shadow: 1px 1px 1px 1px;
+  cursor: pointer;
+}
+
+img:active{
+  opacity: 0.5;
+}
+
+#score-box {
+  height: 2rem;
+  width: 260px;
+  line-height: 2rem;
+  background-color: #f08080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto 0 auto;
+  border: 1px solid black;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.restart{
+  height: 30px;
+  width: 100px;
+  border: 1px solid black;
+  color: #f08080;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 2rem;
+  animation: slideUpFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

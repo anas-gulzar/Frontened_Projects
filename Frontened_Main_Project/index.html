@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="box">
+    <div id="heading"><h1>Rock Paper Scissors</h1></div>
+
+    <div class="box-wrap">
+
+    <div id="sub-heading"><h3>Select Your Weapon</h3></div>
+
+  <div class="choices">
+
+    <div class="choice">
+      <img src="rock.png" alt="rock" id="rock">
+    </div>
+
+    <div class="choice">
+      <img src="paper.png" alt="paper" id="paper">
+    </div>
+
+    <div class="choice">
+      <img src="scissors.png" alt="scissors" id="scissors">
+    </div>
+
+  </div>
+
+</div>
+
+
+  <div class="play-game hidden">
+    <h4>You vs Computer</h4>
+    <br>
+    <div class="image-wrap">
+    <img src="rock-mirror.png" class="your-move move" id="rotate">
+    <img src="rock.png" class="comp-move move">
+    </div>
+    <span class="play-again-box"> 
+    <b><p id="win-status"></p></b>
+    <br>
+    <button id="restart-button" class="play-again"><span>Play Again</span></button>
+    </span>
+  </div>
+
+
+
+  <div id="score-box">
+
+    <div >Your : <span class="won">0</span></div>
+    &nbsp;|&nbsp;
+    <div >Comp : <span class="lost">0</span></div>
+    &nbsp;|&nbsp;
+    <div >Draw : <span class="draw">0</span></div>
+
+  </div>
+ 
+</div>
+
+<div><button class="restart">Restart</button></div>
+
+<script src="app.js"></script>
+</body>
+</html>
